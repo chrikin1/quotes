@@ -1,3 +1,9 @@
-<p>
-  This is project Quotes!
-</p>
+<h1>Best o</h1>
+<ul>
+    <div *ngFor='let goal of goals;let i = index'>
+        <li  id="{{i}}" appStrikethrough>{{goal.name}}</li>
+        <button  (click)='toogleDetails(i)'>Toogle Details</button>  <app-goal-details *ngIf="goal.showDescription" [goal]='goal' (isComplete)= 'completeGoal($event,i)'></app-goal-details>
+    
+      </div>
+  </ul>
+  
