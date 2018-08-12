@@ -1,21 +1,9 @@
-<div class="panel panel-primary">
-    <div class="panel-body">
-      <form #quoteForm='ngForm' (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <label class="col-md-4">Name</label>
-          <input type="text" class="form-control" name="name" [(ngModel)]="quote.quoteName"/>
-          <br>
-          <label class="col-md-4">Author</label>
-          <input type="text" class="form-control" name="author" [(ngModel)]="quote.creator"/>
-        </div>
-        <div class="form-group">
-          <label class="col-md-4">Description</label>
-          <textarea class="form-control" rows="2" name="Description" [(ngModel)]="quote.description" required></textarea>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn btn-primary">Add</button>
-          </div>
-      </form>
-    </div>
-</div>
-    
+<form class="new_quote" #quoteForm='ngForm' (ngSubmit)="onSubmit()">
+  <label>Enter quote</label>
+  <input type="text" name="quote" placeholder="Quote name" [(ngModel)]="quote.quoteName" required>
+  <label>Your Name</label>
+  <input type="text" name="name" placeholder="My name" [(ngModel)]="quote.creator" required>
+  <label>Description</label>
+  <textarea class="form-control" rows="3" name="description" [(ngModel)]="quote.description" required></textarea>
+  <button type="submit" name="button">Post Quote</button>
+</form>

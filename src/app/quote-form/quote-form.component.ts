@@ -4,7 +4,7 @@ import { Quote, QuoteList } from '../quote';
 @Component({
   selector: 'app-quote-form',
   templateUrl: './quote-form.component.html',
-  styleUrls: ['./quote-form.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class QuoteFormComponent implements OnInit {
   quote = new Quote("", "", "");
