@@ -1,9 +1,7 @@
 <h1> The Quotes</h1>
 <hr>
-<div *ngFor='let quote:quotes'>
+<div *ngFor='let quote of quotes;'>
   <ul>
-      <li>{{quote.id}},{{quote.name}}</li>
-      <app-quote- [quote]:'quote'></app-quote->
+      <li>{{quote.id}},{{quote.quoteName}}</li>
   </ul>
   </div>
-<p *ngIf='quotes.length>3'>get inspired</p>

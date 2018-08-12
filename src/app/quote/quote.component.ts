@@ -1,14 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import {Quote} from '../quote';
+import {Quote, QuoteList} from '../quote';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes[
-    new Quote(1,'Your dreams are valid'),
-  ]
+  quotes = QuoteList;
+
+  upvoteQuote(id) {
+    this.quotes[id].quoteUpvotes+=1;
+  }
+
+  downvoteQuote(id) {
+    this.quotes[id].quoteDownvotes+=1;
+  }
+
+  toggleDetail(id) {
+    this.quotes[id].detailsVisible = !this.quotes[id].detailsVisible;
+  }
 
   constructor() { }
 
