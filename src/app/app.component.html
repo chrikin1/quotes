@@ -1,3 +1,19 @@
-<h1>Hi</h1>
-<app-quote-form></app-quote-form>
-<app-quote></app-quote>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Quotes</title>
+  </head>
+  <body>
+    <div class="recent_quotes animated bounceInLeft">
+      <h1> Quotes </h1>
+      <hr>
+      <app-quote></app-quote>
+    </div>
+    <div class="add_quote animated bounceInRight">
+      <app-quote-form></app-quote-form>
+    </div>
+  </body>
+</html>
