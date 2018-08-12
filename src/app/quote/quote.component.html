@@ -4,8 +4,8 @@
       {{quote.quoteName}}
     </p>
     <ul>
-      <li><button (click)="downvoteQuote(quote.id)" type="submit" name="downvote"><i class="fa fa-minus"></i> Downvote</button></li>
-      <li><button (click)="upvoteQuote(quote.id)" type="submit" name="upvote"><i class="fa fa-plus"></i> Upvote</button></li>
+      <li><button (click)="downvoteQuote(quote.id)" type="submit" name="downvote"><i class="fa fa-minus"></i> Downvote: {{quote.quoteDownvotes}}</button></li>
+      <li><button (click)="upvoteQuote(quote.id)" type="submit" name="upvote"><i class="fa fa-plus"></i> Upvote {{quote.quoteUpvotes}}</button></li>
     </ul>
   </div>
 </div>
