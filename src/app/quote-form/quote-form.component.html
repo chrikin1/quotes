@@ -1,9 +1,0 @@
-<form class="new_quote" #quoteForm='ngForm' (ngSubmit)="onSubmit()">
-  <label>Enter quote</label>
-  <input type="text" name="quote" placeholder="Quote name" [(ngModel)]="quote.quoteName" required>
-  <label>Your Name</label>
-  <input type="text" name="name" placeholder="My name" [(ngModel)]="quote.creator" required>
-  <label>Description</label>
-  <textarea class="form-control" rows="3" name="description" [(ngModel)]="quote.description" required></textarea>
-  <button type="submit" name="button">Post Quote</button>
-</form>
